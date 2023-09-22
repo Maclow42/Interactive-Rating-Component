@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Overpass';
+    src: url('./Overpass/Overpass-VariableFont_wght.ttf') format('truetype');
+}
+
+:root {
+    --h-font: hsl(0, 0%, 100%);
+    --text-font: hsl(217, 12%, 63%);
+    --button: hsl(216, 12%, 54%); 
+    --card-bck: hsla(213, 19%, 18%, 0.6);
+    --circle-bck: hsla(213, 19%, 18%, 1);  /* hsl(215, 20%, 25%);      */
+    --main-color: hsl(25, 97%, 53%);
+    --background: hsl(216, 12%, 8%);
+    --font: 'Overpass';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color : var(--h-font);
+    font-size: 15px;
+    font-style: normal;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--background)
+}
+
+.main-container{
+    display: none;
+    flex-direction: column;
+    width: 80%;
+    padding: 30px;
+    border-radius: 8px;
+    gap: 30px;
+    background-color: var(--card-bck);
+    max-width: 400px;
+    
+    font-family: var(--font);
+    font-weight: 400;
+}
+
+#eval-section p{
+    color: hsl(217, 12%, 63%);
+}
+
+#result-section{
+    text-align: center;
+}
+
+#result-section .selected_p, i{
+    color: var(--main-color);
+    border-radius: 25px;
+    background-color: var(--circle-bck);
+}
+
+#result-section .selected_p{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-container h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main-container p{
+    font-weight: 400;
+    color: var(--button);
+}
+
+.active-container{
+    display: flex;
+}
+
+.star-logo{
+    width: 20px;
+    height: 20px;
+}
+
+span{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+span .circle {
+    width: 50px;
+    height: 50px;
+    background-color: var(--circle-bck); /* Couleur du rond */
+    border-radius: 50%; /* Pour faire un cercle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Taille de la police du chiffre */
+    color: white; /* Couleur du chiffre */
+    font-weight: 100;
+}
+
+.score-button:hover{
+    cursor: pointer;
+    background-color: var(--main-color);
+}
+
+span .active-score{
+    background-color: var(--main-color);
+}
+
+button{
+    background-color: var(--main-color);
+    border: none;
+    padding : 10px;
+    border-radius: 25px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+button:active{
+    transform: scale(0.95);
+}
+
+#result-section{
+    align-items: center;
+}
+
+.selected_p{
+    padding: 5px;
+    border-radius: 25px;
+    color: var(--main-color);
+}

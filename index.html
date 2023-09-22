@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./src/styles.css">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="main-container active-container" id="eval-section">
+    <div class="circle">
+      <img src="./images/icon-star.svg" id="star-logo" alt="logo" />
+    </div>
+    <h1>How well did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <span class="score-span">
+      <!-- Here will be placed score buttons-->
+    </span>
+    <button onclick="Submit()">SUBMIT</button>
+  </div>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <div class="main-container" id="result-section">
+    <div class="circle">
+      <img src="./images/illustration-thank-you.svg" id="ty-logo" alt="logo" />
+    </div>
+    <p class="selected_p">You selected <i id="given-note"></i> out of <i id="nb-notes"></i></p>
+    
+    <h1>Thank you!</h1>
+    <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+  </div>
+</body>
+
+<script src="src/JSMark.js"></script>
+
+</html>
